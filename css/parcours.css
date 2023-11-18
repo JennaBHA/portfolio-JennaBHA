@@ -1,0 +1,96 @@
+.parcours-pro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    border-bottom: 2px solid white; 
+    background-image: url('../background/parcours.jpg');
+    background-size: 100%;
+    position: relative; 
+}
+
+.parcours-pro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.parcours-pro-content b {
+    color: #00abf0;
+}
+
+.parcours{
+    height: 100vh;
+    /* display: flex; */
+    /* align-items: center; */
+    /* padding: 0 10%; */
+    /* border-bottom: 2px solid white;  */
+    /* background-image: url('../background/parcours.jpg'); */
+    /* background-size: 100%; */
+    /* position: relative;  */
+}
+
+.parcours-pro-content {
+    max-width: 500px;
+    z-index: 1;
+}
+
+.parcours-content {
+    background-color: #0d2c41;
+    max-width: 1000px;
+    z-index: 1;
+    margin-top: 10px;
+    margin-left: 20vh;
+}
+
+.parcours-content h2 {
+    /* margin-left: 130px; */
+    padding: 2px;
+    font-size: 32px;
+    /* text-align: center; */
+}
+
+.parcours-content li, ul {
+    background-color: blueviolet;
+    padding: 2px;
+    font-size: 18px;
+    /* list-style: none; */
+}
+
+body {
+    /* background-image: url('../background/parcours.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.parcours-pro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    border-bottom: 2px solid white; 
+    position: relative; 
+    background-attachment: fixed; /*Ajout de cette ligne*/
+}
+
+.parcours-pro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.parcours-pro-content b {
+    color: #00abf0;
+}
+
+/* Ajoutez vos autres styles pour .parcours et .parcours-pro-content ici */
+

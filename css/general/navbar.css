@@ -1,0 +1,39 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+}
+
+.logo {
+    font-size: 20px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.logo:hover {
+    color: #00abf0;
+}
+
+.navbar a {
+    font-size: 13px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transform: .3s;
+}
+
+.navbar a:hover, 
+.navbar a.active{
+    color: #00abf0;
+}
