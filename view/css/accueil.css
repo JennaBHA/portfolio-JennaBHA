@@ -26,7 +26,9 @@ body {
     align-items: center;
     padding: 0 10%;
     border-bottom: 2px solid white;
-    background-attachment: fixed; /*Ajout de cette ligne*/
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
 
 }
 
@@ -149,8 +151,3 @@ span {
 }
 
 /* ------------------------------------------------------------------- */
-
-footer {
-    margin: 30px 30px 30px 30px;
-    text-align: center;
-}

@@ -1,15 +1,15 @@
-.parcours-pro {
+.experience {
     height: 100vh;
     display: flex;
     align-items: center;
     padding: 0 10%;
     border-bottom: 2px solid white; 
-    background-image: url('../background/parcours.jpg');
+    background-image: url('../background/HD-wallpaper-code-text-programming-coding.jpg');
     background-size: 100%;
     position: relative; 
 }
 
-.parcours-pro::before {
+.experience::before {
     content: '';
     position: absolute;
     top: 0;
@@ -19,11 +19,13 @@
     background: rgba(0, 0, 0, 0.5); 
 }
 
-.parcours-pro-content b {
+.experience-content b {
     color: #00abf0;
 }
 
-.parcours{
+
+
+.experience{
     height: 100vh;
     /* display: flex; */
     /* align-items: center; */
@@ -34,31 +36,37 @@
     /* position: relative;  */
 }
 
-.parcours-pro-content {
+.experience-content {
     max-width: 500px;
     z-index: 1;
 }
 
-.parcours-content {
-    background-color: #0d2c41;
+.experience-content {
+    /* background-color: #0d2c41; */
     max-width: 1000px;
     z-index: 1;
     margin-top: 10px;
-    margin-left: 20vh;
+    margin-left: 5vh;
 }
 
-.parcours-content h2 {
+.experience-content h2 {
     /* margin-left: 130px; */
     padding: 2px;
     font-size: 32px;
     /* text-align: center; */
 }
 
-.parcours-content li, ul {
+/* .experience-content li, ul {
     background-color: blueviolet;
     padding: 2px;
     font-size: 18px;
     /* list-style: none; */
+/* } */
+
+.experience-content .b {
+    color: #00abf0;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 body {
@@ -68,7 +76,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.parcours-pro {
+.experience {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -76,9 +84,11 @@ body {
     border-bottom: 2px solid white; 
     position: relative; 
     background-attachment: fixed; /*Ajout de cette ligne*/
+    background-repeat: no-repeat; 
+    background-size: cover; 
 }
 
-.parcours-pro::before {
+.experience::before {
     content: '';
     position: absolute;
     top: 0;
@@ -88,9 +98,6 @@ body {
     background: rgba(0, 0, 0, 0.5); 
 }
 
-.parcours-pro-content b {
+.experience-content b {
     color: #00abf0;
 }
-
-/* Ajoutez vos autres styles pour .parcours et .parcours-pro-content ici */
-
