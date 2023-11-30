@@ -1,0 +1,164 @@
+.parcours-pro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    border-bottom: 2px solid white; 
+    background-image: url('../../background/parcours.jpg');
+    background-size: 100%;
+    position: relative; 
+}
+
+.parcours-pro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.parcours-pro-content b {
+    color: #00abf0;
+	font-size: 20px;
+}
+
+.parcours{
+    height: 100vh;
+    /* display: flex; */
+    /* align-items: center; */
+    /* padding: 0 10%; */
+    /* border-bottom: 2px solid white;  */
+    /* background-image: url('../background/parcours.jpg'); */
+    /* background-size: 100%; */
+    /* position: relative;  */
+}
+
+.parcours-pro-content {
+    max-width: 500px;
+    z-index: 1;
+}
+
+.parcours-content {
+    background-color: #0d2c41;
+    max-width: 1000px;
+    z-index: 1;
+    margin-top: 10px;
+    margin-left: 20vh;
+}
+
+.parcours-content h2 {
+    /* margin-left: 130px; */
+    padding: 2px;
+    font-size: 32px;
+    /* text-align: center; */
+}
+
+/* .parcours-content li, ul {
+    background-color: blueviolet;
+    padding: 2px;
+    font-size: 18px;
+    /* list-style: none; */
+/* } */
+
+body {
+    /* background-image: url('../background/parcours.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.parcours-pro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    border-bottom: 2px solid white; 
+    position: relative; 
+    background-attachment: fixed; /*Ajout de cette ligne*/
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.parcours-pro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.parcours-pro-content b {
+    color: #00abf0;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+/* timeline */
+
+
+/* --------------------------------------------------------------------------- */
+
+/* .parcours-pro .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #081b29;
+}
+
+.btn-box a:nth-child(2)::before {
+    background: #00abf0;
+}
+
+.btn-box a::before {
+    content : '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+} */
+
+

@@ -1,0 +1,105 @@
+.situation {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    border-bottom: 2px solid white; 
+    background-image: url('../../background/situation.jpg');
+    background-size: 100%;
+    position: relative; 
+}
+
+.situation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.situation-content b {
+    color: #00abf0;
+}
+
+.situation{
+    height: 100vh;
+    /* display: flex; */
+    /* align-items: center; */
+    /* padding: 0 10%; */
+    /* border-bottom: 2px solid white;  */
+    /* background-image: url('../background/parcours.jpg'); */
+    /* background-size: 100%; */
+    /* position: relative;  */
+}
+
+.situation-content {
+    max-width: 500px;
+    z-index: 1;
+}
+
+.situation-content {
+    /* background-color: #0d2c41; */
+    max-width: 1000px;
+    z-index: 1;
+    margin-top: 10px;
+    margin-left: 5vh;
+}
+
+.situation-content h2 {
+    /* margin-left: 130px; */
+    padding: 2px;
+    font-size: 32px;
+    /* text-align: center; */
+}
+
+/* .situation-content li, ul {
+    background-color: blueviolet;
+    padding: 2px;
+    font-size: 18px;
+    /* list-style: none; */
+/* } */
+
+.situation-content .b {
+    color: #00abf0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+body {
+    /* background-image: url('../background/parcours.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.situation {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    border-bottom: 2px solid white; 
+    position: relative; 
+    background-attachment: fixed; /*Ajout de cette ligne*/
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.situation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.situation-content b {
+    color: #00abf0;
+}
+
+/* ------------------------------- */
+
+ 

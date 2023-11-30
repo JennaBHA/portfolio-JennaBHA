@@ -1,3 +1,4 @@
+/* navbar.css */
 .header {
     position: absolute;
     top: 0;
@@ -10,6 +11,11 @@
     align-items: center;
     z-index: 100;
     position: fixed;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.header.scrolled {
+    background-color: #22313f; 
 }
 
 .logo {
@@ -30,10 +36,10 @@
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
-    transform: .3s;
+    transition: .3s;
 }
 
 .navbar a:hover, 
-.navbar a.active{
+.navbar a.active {
     color: #00abf0;
 }
