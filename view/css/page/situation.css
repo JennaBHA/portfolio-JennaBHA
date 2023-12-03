@@ -25,13 +25,6 @@
 
 .situation{
     height: 100vh;
-    /* display: flex; */
-    /* align-items: center; */
-    /* padding: 0 10%; */
-    /* border-bottom: 2px solid white;  */
-    /* background-image: url('../background/parcours.jpg'); */
-    /* background-size: 100%; */
-    /* position: relative;  */
 }
 
 .situation-content {
@@ -40,7 +33,6 @@
 }
 
 .situation-content {
-    /* background-color: #0d2c41; */
     max-width: 1000px;
     z-index: 1;
     margin-top: 10px;
@@ -48,18 +40,9 @@
 }
 
 .situation-content h2 {
-    /* margin-left: 130px; */
     padding: 2px;
     font-size: 32px;
-    /* text-align: center; */
 }
-
-/* .situation-content li, ul {
-    background-color: blueviolet;
-    padding: 2px;
-    font-size: 18px;
-    /* list-style: none; */
-/* } */
 
 .situation-content .b {
     color: #00abf0;
@@ -68,7 +51,6 @@
 }
 
 body {
-    /* background-image: url('../background/parcours.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -100,6 +82,132 @@ body {
     color: #00abf0;
 }
 
-/* ------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/*card*/
+.card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
 
- 
+.card {
+    width: calc(25% - 20px); 
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+}
+
+.card h2 {
+  color: black;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+}
+
+.bouton_pop {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* .bouton_pdf {
+  margin-top: 20px;
+} */
+
+.bouton_pdf {
+  display: flex;
+}
+
+.pdf {
+  margin: 10px;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pdf:hover {
+  background-color: #2980b9;
+}
+
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.popup-content {
+  background-color: #333;
+  padding: 35px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  max-height: 80vh;
+  min-height: 70vh;
+}
+
+.popup-content h2 {
+  font-size: 25px;
+}
+
+.popup-content ul li {
+  margin-left: 50px;
+}
+
+.popup-content ul li a{
+  text-decoration: underline;
+  color: #ededed;
+  font-size: 15px;
+}
+
+.close-bouton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+}
+
+.card-exp {
+  color: #000;
+  font-weight: bold;
+}
+
+.lien {
+  color: #ededed;
+}

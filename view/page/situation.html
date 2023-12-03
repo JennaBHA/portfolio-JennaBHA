@@ -1,167 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="icon" type="image/png" href="../background/favicon.png" />
-    <link rel="stylesheet" href="../css/general/responsive.css">
-    <link rel="stylesheet" href="../css/general/scrollbar.css">
-    <link rel="stylesheet" href="../css/general/general.css">
-    <link rel="stylesheet" href="../css/general/navbar.css">
-    <link rel="stylesheet" href="../css/general/up_arrow.css">
-    <link rel="stylesheet" href="../css/general/footer.css">
-    <link rel="stylesheet" href="../css/page/pop_op.css">
-    <link rel="stylesheet" href="../css/general/timeline.css">
-    <link rel="stylesheet" href="../css/page/situation.css">
-    <link rel="stylesheet" href="../css/page/card_situation.css">
-    <title>Portfolio - Situation Professionnelle</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="icon" type="image/png" href="../background/favicon.png" />
+  <link rel="stylesheet" href="../css/general/responsive.css">
+  <link rel="stylesheet" href="../css/general/scrollbar.css">
+  <link rel="stylesheet" href="../css/general/general.css">
+  <link rel="stylesheet" href="../css/general/navbar.css">
+  <link rel="stylesheet" href="../css/general/up_arrow.css">
+  <link rel="stylesheet" href="../css/general/footer.css">
+  <link rel="stylesheet" href="../css/page/pop_op.css">
+  <link rel="stylesheet" href="../css/general/timeline.css">
+  <link rel="stylesheet" href="../css/page/situation.css">
+  <title>Portfolio - Situation Professionnelle</title>
 </head>
+
 <body>
-     <!-- debut bouton remonter page -->
-     <div class="btn">
+  <!-- debut bouton remonter page -->
+  <div class="btn">
         <img src="../background/bx-up-arrow-alt.svg" class="icone">
+    </div> 
+  <!-- fin bouton remonter page
+  <!-- début menu -->
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <nav class="navbar">
+      <a href="accueil.html" class="active">Accueil</a>
+      <a href="parcours.html">Parcours scolaire</a>
+      <a href="experience.html">Experience Professionnelle</a>
+      <a href="situation.html">Situation Professionnelle</a>
+      <a href="certification.html">Certification</a>
+      <a href="veille.html">Veille technologiques</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <img src="../background/menu-btn.png" alt="menu-hamburger" class="menu-hamburger">
+  </header>
+  <!-- fin menu -->
+  <section class="situation">
+    <div class="situation-content">
+      <h1 class="title">Mes Situations Professionnelle</h1>
+      <p class="b">Mes projets réaliser durants ma formation</p>
     </div>
-    <!-- fin bouton remonter page -->
-    <!-- début menu -->
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <nav class="navbar">
-            <a href="accueil.html" class="active">Accueil</a>
-            <a href="parcours.html">Parcours scolaire</a>
-            <a href="experience.html">Experience Professionnelle</a>
-            <a href="situation.html">Situation Professionnelle</a>
-            <a href="#">Certification</a>
-            <a href="#">Veille technologiques</a>
-            <a href="#">Contact</a>
-        </nav>
-        <img src="../background/menu-btn" alt="manu-hamburger" class="menu-hamburger">
-    </header>
-    <!-- fin menu -->
-    <section class="situation">
-        <div class="situation-content">
-            <h1 class="title">Mes Situations Professionnelle</h1>
-            <p class="b">Mes projets réaliser durants ma formation</p>
+  </section>
+  <div class="card-container">
+    <div class="card">
+      <img src="../background/sharepoint.jpg" alt="Card Image">
+      <div class="card-content">
+        <h2 class="card-title">sharepoint</h2>
+        <p class="card-exp">Elaboration d’un site intranet entreprise</p>
+        <br>
+        <button class="bouton_pop" onclick="showPopup()">En savoir plus</button>
+      </div>
+    </div>
+    <div class="popup" id="popup">
+      <span class="close-bouton" onclick="closePopup()">&times;</span>
+      <div class="popup-content">
+        <h2>Contexte</h2>
+        <br>
+        <p>Je suis dans le service infra, dans mon équipe il y a 5 membres, dont :</p>
+        <ul>
+          <li>1 chargé de maintenance,</li>
+          <li>2 admins réseaux/système (dont 1 en période d’essai)</li>
+          <li>1 admins poste de travail</li>
+          <li>1 administrateur Sys/réseaux en cybersécurité (alternance)</li>
+        </ul>
+        <p>Il est rattaché au service DOSI (organisation du système informatique).</p>
+        <p>Ont travails tous dans le même bureau.</p>
+        <p>Je dois réaliser un Intranet pour cette entreprise.</p>
+        <br>
+        <h2>Besoin</h2>
+        <br>
+        <p>J’ai fait cette intranet pour répondre aux besoins de l’entreprise, c’est-à-dire pouvoir proposer un site ayant tous les liens rapides des outils de l’entreprise et pouvoir avoir un site représentatif avec les actualités, l’agenda, les nouveaux arrivants, la météo etc…</p>
+        <br>
+        <h2>Environnement</h2>
+        <br>
+        <ul>
+          <li>SharePoint (réalisation de l’intranet)</li>
+        </ul>
+        <br>
+        <h2>Réalisation</h2>
+        <br>
+        <ul>
+          <li>Familliarisation de l’outil</li>
+          <li>Collecte d’information auprès des services</li>
+          <li>Création de la première maquette</li>
+          <li>Prise de rendez-vous avec la directrice ressource humaine</li>
+          <li>Amélioration de la maquette</li>
+          <li>Prise de rendez vous avec la directrice Ressource humaine</li>
+          <li>Création de documentation SharePoint</li>
+        </ul>
+        <br>
+        <h2>Bilan</h2>
+        <br>
+        <p>Ce projet m’a apporté de l’expérience dans le travail en équipe, satisfaction des collègues vers l’intranet réalisé.</p>
+        <p>Mon stage m’a permis d’acquérir les compétences nécessaires sur SharePoint.</p>
+        <p>J’en ai retenu le développement de l’intranet, la vie en entreprises, les missions, les réunions. Aussi la faite de participer à des présentations et de pouvoirs présenter le fruit de nos efforts. On envisagerait de pouvoir garder l’intranet comme page principale pour l’entreprise avec tous les outils et de pouvoir compter essentiellement sur cette page remplie d’outils utile.</p>
+        <br>
+        <h2>Production associée</h2>
+        <br>
+        <ul>
+          <li>Cahier des charges</li>
+          <li>Outils site de communications</li>
+          <li>Outils site d’équipe</li>
+          <li>Qu’est-ce que SharePoint</li>
+          <li>Section communication</li>
+          <li>Structure des sites</li>
+          <li>
+            <a href="../background/maquette 1.png">Maquette n°1</a>
+          </li>
+          <li>
+            <a href="../background/maquette 2.png">Maquette n°2</a>
+          </li>
+        </ul>
+        <br>
+        <div class="bouton_pdf">
+          <button class="pdf" onclick="window.open('../PDF/cahier-des-charges.pdf', '_blank')">Cahier des charges</button>
+          <button class="pdf" onclick="window.open('../PDF/communication.pdf', '_blank')">Outils - communication</button>
+          <button class="pdf" onclick="window.open('../PDF/équipe.pdf', '_blank')">Outils - équipe</button>
+          <button class="pdf" onclick="window.open('../PDF/cest-quoi-SharePoint.pdf', '_blank')">Qu'est-ce que SharePoint ?</button>
+          <button class="pdf" onclick="window.open('../PDF/Section.pdf', '_blank')">Section</button>
+          <button class="pdf" onclick="window.open('../PDF/Structure.pdf', '_blank')">Structure</button>
         </div>
-    </section>
-    <div class="card-container">
-        <figure class="snip1418"><img src="../background/sharepoint.jpg" alt="btssio"/>
-            <figcaption>
-              <h3>SharePoint</h3>
-              <p>Eaboration d’un site intranet entreprise SharePoint</p>
-              <p>Brignais 69530</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="../background/sharepoint-designer.jpg" alt="Card Image">
+      <div class="card-content">
+        <h2 class="card-title">Sharepoint designer</h2>
+        <p class="card-exp">Elaboration d’un site intranet entreprise SharePoint designer</p>
+        <br>
+        <button class="bouton_pop" onclick="showPopup1()">En savoir plus</button>
+      </div>
+    </div>
+    <div class="popup" id="popup1">
+      <span class="close-bouton" onclick="closePopup1()">&times;</span>
+      <div class="popup-content">
+        <h2>context</h2>
+        <br>
+        <p>J’étais en stage de 6 semaines (15 mai – 23 juin 2023) dans l’entreprise d’éditeur de logiciel pour les professionnels de la menuiserie ELCIA.</p>
+        <p>Je suis dans le service infra, dans mon équipe il y a 5 membres, dont :</p>
+        <ul>
+          <li>1 chargé de maintenance,</li>
+          <li>2 admins réseaux/système (dont 1 en période d’essai),</li>
+          <li>1 admins poste de travail,</li>
+          <li>1 administrateur Sys/réseaux en cybersécurité (alternance).</li>
+        </ul>
+        <p>Il est rattaché au service DOSI (organisation du système informatique).</p>
+        <p>Ont travails tous dans le même bureau.</p>
+        <br>
+        <p>Dans mon travail, je devais déchiffrer et modifier le code source de mon site Intranet harePoint pour pouvoir créer des applications SharePoint.</p>
+        <p>Je suis donc rentré dans le code source qui est en C# et PHP.</p>
+        <br>
+        <h2>Besoin</h2>
+        <br>
+        <p>Trouver un moyen de personnalisation de l’outil SharePoint pour pouvoir offrir plus d’opportunité de conceptualiser le style du site</p>
+        <br>
+        <h2>Environnement</h2>
+        <br>
+        <ul>
+          <li>Visual studio code</li>
+          <li>Visual studio</li>
+          <li>SQL my admin</li>
+          <li>Azur dev’Ops</li>
+        </ul>
+        <br>
+        <h2>Réalisation</h2>
+        <br>
+        <ul>
+          <li>Création de la première maquette</li>
+          <li>Outils « inspecter » pour visualiser le code</li>
+          <li>Importation du site SharePoint dans visual studio code</li>
+          <li>Tentative de convection du site en HTLM et SCSS</li>
+          <li>Modification du code</li>
+        </ul>
+        <br>
+        <h2>Bilan</h2>
+        <br>
+        <p>Ce projet m’a apporté de l’expérience au niveau de la programmation vers de nouvelles compétences et de nouveaux langages appris lors de ce stage mais aussi de l’expérience au niveau du C# auquel je ne suis pas encore à l’aise, du travail en équipe.</p>
+        <br>
+        <p>Mon stage m’a permis d’acquérir les compétences nécessaires sur SharePoint, Visual studio code, Visual studio, Azur dev Ops.</p>
+        <br>
+        <p>Aussi la faite de participer à des présentations et de pouvoirs présenter le fruit de nos efforts.</p>
+        <br>
+        <p>On envisagerait de pouvoir garder l’intranet comme page principale pour l’entreprise avec tous les outils et de pouvoir compter essentiellement sur cette page remplie d’outils utile.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="../background/glpi.png" alt="Card Image">
+      <div class="card-content">
+        <h2 class="card-title">GLPI</h2>
+        <br></br><br> <!---a changer-->
+        <button class="bouton_pop" onclick="showPopup2()">En savoir plus</button>
+      </div>
+    </div>
+    <div class="popup" id="popup2">
+      <span class="close-bouton" onclick="closePopup2()">&times;</span>
+      <div class="popup-content">
+        <h2>Contexte</h2>
+        <br>
+        <p>GLPI (Gestionnaire Libre de Parc Informatique) est un logiciel libre de gestion des services
+            informatiques (ITSM) et de gestion des services d’assistance.</p>
+            <br>
+            <p>GLPI est une application web qui aide les entreprises à gérer leur système d’information (inventaire
+                automatisé, gestion des tickets d’incidents, profils utilisateurs, projets…) C’est aussi un outil d’aide à la
+                décision grâce à ses tableaux de bord.</p>
                 <br>
-
-            <div class="box">
-              <a class="button" href="#popup1">Voir plus</a>
-          </div>
-          
-          <div id="popup1" class="overlay">
-              <div class="popup">
-                  <h2>Lorem is up</h2>
-                  <a class="close" href="#box">&times;</a>
-                  <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatum maiores quisquam quia et totam, vitae quod similique ducimus officia quaerat explicabo laboriosam velit quibusdam minima quae asperiores ad deserunt.
-                  </div>
-              </div>
-          </div>
-
-
-        </figcaption>
-
-          </figure>
-
-          <figure class="snip1418 hover"><img src="../background/FCIL.jpg" alt="sample96"/>
-            <figcaption>
-              <h3>FCIL</h3>
-              <p>Lycée Aragon Picasso - Maintenance Informatiques</p>
-              <p>Givors 69700</p>
-              <div class="price">
-                Janvier 2021 - avril 2021
-              </div>
-            </figcaption><a href="#"></a>
-          </figure>
-
-
-          <figure class="snip1418 hover"><img src="../background/creche.jpg" alt="sample96"/>
-            <figcaption>
-              <h3>BAC ASSP - Terminal</h3>
-              <p>Crèche Pôle enfance Marie Antoinette Goubelly<p>
-              <p>Givors 69700</p>
-              <div class="price">
-                Janvier 2021 - avril 2021
-              </div>
-            </figcaption><a href="#"></a>
-          </figure>
-
-
-          <figure class="snip1418"><img src="../background/ehpad.jpg" alt="sample92"/>
-            <figcaption>
-              <h3>BAC ASSP - Terminal</h3>
-              <p>EHPAD Sainte Anne - ASH</p>
-              <p>Brignais 69530</p>
-              <div class="price">
-                Novembre 2020 - Décembre 2020
-              </div>
-            </figcaption><a href="#"></a>
-          </figure>   
-        </div>
+                <p>Les fonctionnalités de cette solution aident les administrateurs informatiques à créer une base de
+                    données regroupant des ressources techniques et de gestion, ainsi qu’un historique des actions de
+                    maintenance.</p>
+                    <br>
+                    <h2>Besoin</h2>
+                    <br>
+                    <p>Créer un espace GLPI de gestion de ticket afin que les utilisateurs puissent obtenir de l’aide
+                        rapidement.</p>
+                        <br>
+                        <h2>Environnement</h2>
+                        <br>
+                        <ul class="glpi">
+                            <li>Information : VM Linux (debian 11)</li>
+                            <li>Nom de la machine : GLPI_FINI</li>
+                            <li>Mise à jour de la liste des sources (bullseye)</li>
+                        </ul>
+                        <br>
+                        <h2>Réalisation</h2>
+                        <br>
+                        <ul>
+                            <li>Installation d'apache2</li>
+                            <li>Installation de php</li>
+                            <li> Installation de Mysql</li>
+                            <li>Installation de GLPI</li>
+                            <li>Création d'un utilisateur admin</li>
+                            <li>Importation d'une base sql</li>
+                            <li>Test des tickets</li>
+                        </ul>
+                        <br>
+                        <h2>Bilan</h2>
+                        <p>Cette activité m'a fait comprendre à quel point il est important de gérer correctement le matériel
+                            informatique dans une entreprise. J'ai réalisé qu'il est essentiel de faire régulièrement un inventaire de
+                            ces équipements pour bien les suivre. En bref, cette activité m'a montré l'importance de bien gérer le
+                            matériel informatique dans une entreprise et de mettre en place de bonnes pratiques pour le suivre
+                            efficacement.</p>
+                            <br>
+                            <h2>Production associée</h2>
+                            <br>
+                            <ul>
+                                <li>Installation GLPI</li>
+                                <li>Guide d’utilisation GLPI</li>
+                            </ul>
+      </div>
+    </div>
+  </div>
 
 
-        <div class="card-container">
-        
-          <figure class="snip1418 hover"><img src="../background/covid_1.jpg" alt="sample96"/>
-            <figcaption>
-              <h3>BAC ASSP Première</h3>
-              <p>Pas de stage, COVID19</p>
-              <div class="price">
-              </div>
-            </figcaption><a href="#"></a>
-          </figure>
 
-
-          <figure class="snip1418 hover"><img src="../background/covid.jpg" alt="sample96"/>
-            <figcaption>
-              <h3>BAC ASSP Première</h3>
-              <p>Pas de stage, COVID19</p>
-              <div class="price">
-              </div>
-            </figcaption><a href="#"></a>
-          </figure>
-
-
-          <figure class="snip1418 hover"><img src="../background/sante.jpg" alt="sample96"/>
-            <figcaption>
-              <h3>BAC ASSP Seconde</h3>
-              <p>Centre Hospitalier Montgelas - ASH</p>
-              <p>Givors 69700</p>
-              <div class="price">
-                Janvier 2019 - avril 2019
-              </div>
-            </figcaption><a href="#"></a>
-          </figure>
-
-
-          <figure class="snip1418 hover"><img src="../background/ecolematernelle.jpg" alt="sample96"/>
-            <figcaption>
-              <h3>BAC ASSP Seconde</h3>
-              <p>Ecole Maternelle Paul Gauguin</p>
-              <p>Grigny 69520</p>
-              <div class="price">
-                Avril 2018 - Mai 2018
-              </div>
-            </figcaption><a href="#"></a>
-          </figure>
-        </div>
-        </div>
-
-    <footer>
-        <p>© Jenna BEN HADJ AMOR 2023</p>
-    </footer>
-    <script src="../js/up_arrow.js  "></script>
-    <script src="../js/responsive.js"></script>
-    <script src="../js/navbar.js"></script>
-    <script src="../js/pop_up.js"></script>
+  <div class="card-container">
+    <div class="card">
+      <img src="../background/table_d'helene.png" alt="Card Image">
+      <div class="card-content">
+        <h2 class="card-title">Projet SGRC</h2>
+        <p class="card-exp">Continuation du projet SGRC</p>
+        <br></br>
+        <button class="bouton_pop" onclick="showPopup3()">En savoir plus</button>
+      </div>
+    </div>
+    <div class="popup" id="popup3">
+      <span class="close-bouton" onclick="closePopup3()">&times;</span>
+      <div class="popup-content">
+        <h2>Contexte</h2>
+        <br>
+        <p>Durant ma deuxième année de BTS SIO, ma classe et moi avons collaboré sur le projet La Table d'Hélène. Il s'agit d'une application PHP conçue pour améliorer la gestion des commandes et des tables au sein du lycée Hélène Boucher. Dans le cadre du projet SGRC, nous avons travaillé en équipe pour répondre aux exigences de l'établissement, ce qui a permis d'optimiser les procédures liées à la restauration.</p>
+        <br>
+        <h2>Besoin</h2>
+        <br>
+        <p>L'objectif du projet collaboratif était de concevoir une application complète qui répondrait aux exigences complexes du lycée Hélène Boucher en termes de gestion des commandes. Nous aspirions à créer une solution intégrée pour coordonner les équipes de la cuisine à la caisse, tout en offrant une expérience utilisateur optimale.</p>
+        <br>
+        <h2>Environnement</h2>
+        <br>
+        <p>Le développement a eu lieu dans un contexte collaboratif, exploitant PHP pour la logique côté serveur et MySQL pour la base de données. La répartition des tâches et des responsabilités a été facilitée grâce à l'utilisation de Trello, une plateforme de gestion de projet en ligne. Les interfaces utilisateur ont été soigneusement élaborées pour refléter les divers rôles des utilisateurs, allant des administrateurs aux équipes de service, de cuisine, de bar et de caisse.</p>
+        <br>
+        <h2>Réalisation</h2>
+        <br>
+        <p>L'équipe a adopté une approche méthodique en répartissant efficacement les tâches via Trello. Des réunions périodiques ont été planifiées pour discuter des progrès, résoudre les problèmes et garantir la cohérence globale du projet. Les interfaces dédiées à chaque équipe ont été développées sur mesure, en tenant compte de leurs besoins spécifiques, intégrant des fonctionnalités telles que la prise de commande, la gestion des tables et la transmission des commandes. Des échanges réguliers avec le lycée ont été maintenus pour valider les choix de conception et garantir que l'application répondait aux besoins réels de l'établissement. Ces sessions de discussion ont permis de recueillir des retours précieux, assurant ainsi une adéquation optimale entre le projet et les attentes du lycée.</p>
+        <br>
+        <h2>Bilan</h2>
+        <br>
+        <p>L'objectif du projet collaboratif était de concevoir une application complète répondant aux exigences complexes du lycée Hélène Boucher en matière de gestion des commandes. L'objectif principal consistait à élaborer une solution intégrée pour orchestrer harmonieusement les équipes de la cuisine à la caisse, tout en garantissant une expérience utilisateur optimale.</p>
+        <br>
+        <h2>Production associé</h2>
+        <br>
+        <ul>
+            <li><a class="lien" href="https://brodet.fr/SGRC/">SGRC</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <div class="popup" id="popup">
+      <span class="close-bouton" onclick="closePopup()">&times;</span>
+      <div class="popup-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et eleifend mi.</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>© Jenna BEN HADJ AMOR 2023</p>
+  </footer>
+  <script src="../js/up_arrow.js  "></script>
+  <script src="../js/responsive.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/pop_up.js"></script>
 </body>
+
 </html>

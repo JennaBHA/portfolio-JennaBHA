@@ -1,0 +1,68 @@
+/* Add styles for the form container */
+.form-container {
+    background-color: rgba(255, 255, 255, 0);
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: center;
+    top: 50%;
+    left: 50%;
+    margin-top: 200px;
+    /* transform: translate(50%, 50%); */
+}
+
+/* Style pour le formulaire de contact */
+.contact-content {
+    max-width: 400px;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+}
+form {
+    width: 100%;
+    max-width: 400px;
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4c90af;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4583a0;
+}
+
+#error-message {
+    margin-top: 10px;
+}
+
+/* Style pour le formulaire responsive */
+@media screen and (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+}

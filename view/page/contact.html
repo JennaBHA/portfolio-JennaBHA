@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../background/favicon.png" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/general/responsive.css">
+    <link rel="stylesheet" href="../css/general/scrollbar.css">
+    <link rel="stylesheet" href="../css/general/general.css">
+    <link rel="stylesheet" href="../css/general/footer.css">
+    <link rel="stylesheet" href="../css/general/navbar.css">
+    <link rel="stylesheet" href="../css/general/up_arrow.css">
+    <link rel="stylesheet" href="../css/page/contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- debut bouton remonter page -->
+    <div class="btn">
+        <img src="../background/bx-up-arrow-alt.svg" class="icone">
+    </div>
+    <!-- fin bouton remonter page -->
+    <!-- début menu -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="accueil.html" class="active">Accueil</a>
+            <a href="parcours.html">Parcours scolaire</a>
+            <a href="experience.html">Experience Professionnelle</a>
+            <a href="situation.html">Situation Professionnelle</a>
+            <a href="certification.html">Certification</a>
+            <a href="veille.html">Veille technologiques</a>
+            <a href="#">Contact</a>
+        </nav>
+        <img src="../background/menu-btn.png" alt="manu-hamburger" class="menu-hamburger">
+    </header>
+    <!-- fin menu -->
+
+    <!-- Wrap the contact form in a container with a white background -->
+    <div class="form-container">
+        <section class="contact">
+            <div class="contact-content">
+                <h1 class="title">Contactez-moi</h1>
+                <br>
+                <form id="contactForm" action="#" method="post">
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" required minlength="2">
+
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" id="prenom" name="prenom" required minlength="2">
+
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="mail" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required minlength="5"></textarea>
+
+                    <div id="error-message" style="color: red;"></div>
+
+                    <button type="button" onclick="validateForm()">Contactez-moi</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <br>
+
+    <footer>
+        <p>© Jenna BEN HADJ AMOR 2023</p>
+    </footer>
+    <script src="../js/up_arrow.js"></script>
+    <script src="../js/responsive.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>
