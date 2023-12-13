@@ -23,3 +23,17 @@ btn.addEventListener('click', () => {
 
 // Appel initial pour gérer l'état initial du bouton
 toggleButtonVisibility();
+
+
+// ----------------------------------
+// remonter la page
+   document.addEventListener("DOMContentLoaded", function () {
+      var scrollDownBtn = document.getElementById("scrollDownBtn");
+      var timelineSection = document.getElementById("main");
+
+      scrollDownBtn.addEventListener("click", function () {
+         timelineSection.scrollIntoView({ behavior: "smooth" });
+      });
+   });
+
+

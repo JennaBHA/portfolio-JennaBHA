@@ -4,11 +4,11 @@
   }
   
   ::-webkit-scrollbar-track {
-    background-color: rgba(49,51,56,255); /* Couleur de fond de la scrollbar */
+    background-color: #081b29; /* Couleur de fond de la scrollbar */
   }
   
   ::-webkit-scrollbar-thumb {
-    background-color: rgb(189, 191, 199); /* Couleur du curseur de la scrollbar */
+    background-color: #bdbfc7; /* Couleur du curseur de la scrollbar */
     border-radius: 3px; /*Coins arrondis du curseur*/
   }
   

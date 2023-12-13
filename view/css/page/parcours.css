@@ -1,5 +1,6 @@
 .parcours-pro {
     height: 100vh;
+    background-size: 100%;
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -7,6 +8,9 @@
     background-image: url('../../background/parcours.jpg');
     background-size: 100%;
     position: relative; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
 }
 
 .parcours-pro::before {
@@ -16,8 +20,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.753); 
 }
+
 
 .parcours-pro-content b {
     color: #00abf0;
@@ -26,13 +31,6 @@
 
 .parcours{
     height: 100vh;
-    /* display: flex; */
-    /* align-items: center; */
-    /* padding: 0 10%; */
-    /* border-bottom: 2px solid white;  */
-    /* background-image: url('../background/parcours.jpg'); */
-    /* background-size: 100%; */
-    /* position: relative;  */
 }
 
 .parcours-pro-content {
@@ -49,21 +47,11 @@
 }
 
 .parcours-content h2 {
-    /* margin-left: 130px; */
     padding: 2px;
     font-size: 32px;
-    /* text-align: center; */
 }
 
-/* .parcours-content li, ul {
-    background-color: blueviolet;
-    padding: 2px;
-    font-size: 18px;
-    /* list-style: none; */
-/* } */
-
 body {
-    /* background-image: url('../background/parcours.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -71,44 +59,36 @@ body {
 
 .parcours-pro {
     height: 100vh;
+    font-size: 28px;
     display: flex;
     align-items: center;
     padding: 0 10%;
     border-bottom: 2px solid white; 
     position: relative; 
-    background-attachment: fixed; /*Ajout de cette ligne*/
+    background-attachment: fixed; 
     background-repeat: no-repeat; 
     background-size: cover; 
 }
 
-.parcours-pro::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
-}
-
 .parcours-pro-content b {
     color: #00abf0;
+    font-size: 30px;
 }
 
-/* ---------------------------------------------------------------------------------------------------------------------------------------- */
-/* timeline */
+/*Permet de mettre en ligne les deux titres*/
+.parcours-pro-content h1,
+.parcours-pro-content p {
+    white-space: nowrap;
+}
 
-
-/* --------------------------------------------------------------------------- */
-
-/* .parcours-pro .btn-box {
+.parcours-pro .btn-box {
     display: flex;
-    justify-content: space-between;
     width: 345px;
     height: 50px;
 }
 
 .btn-box a {
+    top: 10px;
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -141,6 +121,11 @@ body {
     color: #081b29;
 }
 
+/*Transition pour baisser la page*/
+html {
+    scroll-behavior: smooth;
+}
+
 .btn-box a:nth-child(2)::before {
     background: #00abf0;
 }
@@ -159,6 +144,4 @@ body {
 
 .btn-box a:hover::before {
     width: 100%;
-} */
-
-
+}

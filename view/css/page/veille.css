@@ -6,7 +6,7 @@
     align-items: center;
     padding: 0 10%;
     border-bottom: 2px solid white; 
-    background-image: url('../../background/veille.jpg');
+    background-image: url('../../background/cyber.jpg');
     background-size: 100%;
     position: relative; 
 }
@@ -65,7 +65,7 @@ body {
     padding: 0 10%;
     border-bottom: 2px solid white; 
     position: relative; 
-    background-attachment: fixed; /*Ajout de cette ligne*/
+    background-attachment: fixed; 
     background-repeat: no-repeat; 
     background-size: cover; 
 }
@@ -191,10 +191,5 @@ body {
   .card-container {
       display: flex;
       justify-content: center;
-      /* justify-content: 10px; */
-      /* margin: 20px 20px 20px 20px; */
       padding: 10px;
-  }
-  
-  /* ----------------------------------------------------------------- */
-  
+  } 

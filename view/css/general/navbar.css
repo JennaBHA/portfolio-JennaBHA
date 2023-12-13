@@ -11,18 +11,20 @@
     align-items: center;
     z-index: 100;
     position: fixed;
+    backdrop-filter: blur(5px);
     transition: background-color 0.5s ease-in-out;
 }
 
 .header.scrolled {
-    background-color: #22313f; 
+    backdrop-filter: blur(5px);
+    background-color: #081b29a7; 
 }
 
 .logo {
     font-size: 20px;
     color: #ededed;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     transition: .3s;
 }
 
