@@ -14,7 +14,6 @@
 	height: auto;
 	display: grid;
 	place-items: center;
-	/* background-color: rgb(245, 245, 245); */
 	padding: 50px 0;
 }
 .main .head {
@@ -108,38 +107,6 @@ ul li .date {
 	font-size: 13px;
 	box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.318);
 }
-
-/* ----------------------------------------------------------------------------------- */
-/* date experience */
-/* ul li .date_exp {
-	position: absolute;
-	width: 160px;
-    margin-left: 250px;
-	height: 33px;
-	background-image: linear-gradient(to right,#7f00ff,#00e5ff);
-	border-radius: 15px;
-	top: -45px;
-	display: grid;
-	place-items: center;
-	color: #fff;
-	font-size: 13px;
-	box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.318);
-}
-
-ul li .date_exp-dr {
-	position: absolute;
-	width: 160px;
-    margin-right: 250px;
-	height: 33px;
-	background-image: linear-gradient(to right,#7f00ff,#00e5ff);
-	border-radius: 15px;
-	top: -45px;
-	display: grid;
-	place-items: center;
-	color: #fff;
-	font-size: 13px;
-	box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.318);
-} */
 
 /* ----------------------------------------------------------------------------------- */
 .container ul li:nth-child(odd) {

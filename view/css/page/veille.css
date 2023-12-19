@@ -5,7 +5,6 @@
     display: flex;
     align-items: center;
     padding: 0 10%;
-    border-bottom: 2px solid white; 
     background-image: url('../../background/cyber.jpg');
     background-size: 100%;
     position: relative; 
@@ -63,7 +62,6 @@ body {
     display: flex;
     align-items: center;
     padding: 0 10%;
-    border-bottom: 2px solid white; 
     position: relative; 
     background-attachment: fixed; 
     background-repeat: no-repeat; 
@@ -113,6 +111,7 @@ body {
     max-width: 100%;
     vertical-align: top;
     position: relative;
+    height: 220px;
   }
   .snip1418 .add-to-cart {
     position: absolute;
@@ -142,14 +141,13 @@ body {
     font-size: 1.4em;
   }
   .snip1418 figcaption {
-    padding: 20px;
+    padding: 10px;
   }
   .snip1418 h3,
   .snip1418 p {
     margin: 0;
   }
   .snip1418 h3 {
-    font-size: 1.5em;
     font-weight: 700;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -162,8 +160,11 @@ body {
   .snip1418 .price {
     font-weight: 500;
     font-size: 1em;
-    line-height: 48px;
+    line-height: 30px;
     letter-spacing: 1px;
+  }
+  .bx-link-external {
+    color: transparent;
   }
   .snip1418 .price s {
     margin-right: 5px;

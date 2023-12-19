@@ -1,7 +1,7 @@
 /* Add styles for the form container */
 .form-container {
     background-color: rgba(255, 255, 255, 0);
-    max-width: 800px; /* Adjust the maximum width as needed */
+    max-width: 800px; 
     margin: auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -9,7 +9,6 @@
     top: 50%;
     left: 50%;
     margin-top: 200px;
-    /* transform: translate(50%, 50%); */
 }
 
 /* Style pour le formulaire de contact */
