@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     padding: 0 10%;
-    border-bottom: 2px solid white; 
+    /* border-bottom: 2px solid white;  */
     background-image: url('../../background/parcours.jpg');
     background-size: 100%;
     position: relative; 
@@ -29,6 +29,9 @@
 	font-size: 20px;
 }
 
+.parcours-pro p {
+    font-size: 20px;
+}
 .parcours{
     height: 100vh;
 }
@@ -63,7 +66,7 @@ body {
     display: flex;
     align-items: center;
     padding: 0 10%;
-    border-bottom: 2px solid white; 
+    /* border-bottom: 2px solid white;  */
     position: relative; 
     background-attachment: fixed; 
     background-repeat: no-repeat; 
@@ -75,10 +78,14 @@ body {
     font-size: 30px;
 }
 
+.parcours-content h1{
+    font-size: 30px;
+  }
 /*Permet de mettre en ligne les deux titres*/
 .parcours-pro-content h1,
 .parcours-pro-content p {
     white-space: nowrap;
+    font-size: 30px;
 }
 
 .parcours-pro .btn-box {

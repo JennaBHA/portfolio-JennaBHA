@@ -74,6 +74,7 @@ body {
     background-size: cover; 
 }
 
+
 .experience::before {
     content: '';
     position: absolute;
