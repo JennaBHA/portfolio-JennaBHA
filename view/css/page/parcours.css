@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     padding: 0 10%;
-    /* border-bottom: 2px solid white;  */
+    border-bottom: 0.1px solid rgb(255, 255, 255); 
     background-image: url('../../background/parcours.jpg');
     background-size: 100%;
     position: relative; 
@@ -23,6 +23,11 @@
     background: rgba(0, 0, 0, 0.753); 
 }
 
+.parcours-pro .b {
+    color: #88bcff;
+    font-weight: bold;
+    font-size: 20px;
+}
 
 .parcours-pro-content b {
     color: #00abf0;
@@ -39,6 +44,13 @@
 .parcours-pro-content {
     max-width: 500px;
     z-index: 1;
+}
+
+.parcours-pro-content {
+    max-width: 1000px;
+    z-index: 1;
+    margin-top: 10px;
+    margin-left: 5vh;
 }
 
 .parcours-content {

@@ -1,14 +1,13 @@
-@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
 .experience {
   height: 100vh;
   display: flex;
   align-items: center;
   padding: 0 10%;
+  border-bottom: 0.1px solid rgb(255, 255, 255); 
   background-image: url('../../background/lyon.jpg');
   background-size: 100%;
   position: relative;
-   font-size: 18px;
+  font-size: 18px;
 }
 
 .experience::after {
@@ -20,11 +19,11 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.6); 
 }
-
-.b {
+ 
+/*.b {
     color: #ff002f;
     font-size: 20px;
-}
+} */
 
 .experience{
     height: 100vh;
