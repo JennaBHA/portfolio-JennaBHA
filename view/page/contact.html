@@ -1,52 +1,41 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page de Contact</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        #contact-form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-
-        input, textarea, button {
-            margin-bottom: 15px;
-            width: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        button {
-            background-color: #4caf50;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <link rel="icon" type="image/png" href="../background/favicon.png" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/general/responsive.css">
+    <link rel="stylesheet" href="../css/general/scrollbar.css">
+    <link rel="stylesheet" href="../css/general/general.css">
+    <link rel="stylesheet" href="../css/general/footer.css">
+    <link rel="stylesheet" href="../css/general/navbar.css">
+    <link rel="stylesheet" href="../css/general/up_arrow.css">
+    <link rel="stylesheet" href="../css/page/contact.css">
+    <title>Contact</title>
+    <!-- debut bouton remonter page -->
+    <div class="btn">
+        <img src="../background/bx-up-arrow-alt.svg" class="icone">
+    </div>
+    <!-- fin bouton remonter page -->
+    <!-- début menu -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="accueil.html">Accueil</a>
+            <a href="parcours.html">Parcours scolaire</a>
+            <a href="experience.html">Experience Professionnelle</a>
+            <a href="situation.html">Situation Professionnelle</a>
+            <a href="certification.html">Certification</a>
+            <a href="veille.html">Veille technologiques</a>
+            <a href="#">Contact</a>
+        </nav>
+        <img src="../background/menu-btn.png" alt="manu-hamburger" class="menu-hamburger">
+    </header>
+    <!-- fin menu -->
 </head>
 <body>
     <div id="contact-form">
-        <h2>Contactez-nous</h2>
         <form id="myForm">
             <label for="fname">Prénom:</label>
             <input type="text" id="fname" name="fname" required>
@@ -63,7 +52,14 @@
             <button type="button" onclick="validateForm()">Contactez-moi</button>
         </form>
     </div>
-
+    <div class="bar-sp"></div>
+    <footer>
+        <p>© Jenna BEN HADJ AMOR 2023</p>
+    </footer>
+    <script src="../js/up_arrow.js"></script>
+    <script src="../js/responsive.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/contact.js"></script>
     <script>
         function validateForm() {
             var fname = document.getElementById("fname").value;
