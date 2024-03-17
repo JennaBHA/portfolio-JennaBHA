@@ -7,13 +7,14 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/general/responsive.css">
     <link rel="stylesheet" href="../css/general/scrollbar.css">
-    <link rel="stylesheet" href="../css/general/general.css">
     <link rel="stylesheet" href="../css/general/footer.css">
     <link rel="stylesheet" href="../css/general/navbar.css">
     <link rel="stylesheet" href="../css/general/bouton.css">
     <link rel="stylesheet" href="../css/general/up_arrow.css">
     <link rel="stylesheet" href="../css/page/experience.css">
     <link rel="stylesheet" href="../css/page/card_experience.css">
+    <link rel="stylesheet" href="../css/general/general.css">
+
     <title>Portfolio - Experience Professionnelle</title>
 </head>
 <body>
@@ -23,22 +24,20 @@
     </div>
     <!-- fin bouton remonter page -->
 
-    <!-- début menu -->
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <nav class="navbar">
-            <a href="accueil.html">Accueil</a>
-            <a href="parcours.html">Parcours scolaire</a>
-            <a href="experience.html">Experience Professionnelle</a>
-            <a href="situation.html">Situation Professionnelle</a>
-            <a href="certification.html">Certification</a>
-            <a href="veille.html">Veille technologiques</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <img src="../background/menu-btn.png" alt="manu-hamburger" class="menu-hamburger">
-    </header>
-    <!-- fin menu -->
-
+    	<!-- début menu -->
+<header class="header">
+  <a href="accueil.html" class="logo">Portfolio</a>
+  <nav class="navbar">
+      <a href="parcours.html" id="parcours">Parcours scolaire</a>
+      <a href="experience.html" id="experience" class="active">Experiences Professionnelles</a>
+      <a href="situation.html" id="situation">Situations Professionnelles</a>
+      <a href="certification.html" id="certification">Certification</a>
+      <a href="veille.html" id="veille">Veille technologique</a>
+      <a href="contact.html" id="contact">Contact</a>
+  </nav>
+  <img src="../background/menu-btn.png" alt="menu-hamburger" class="menu-hamburger">
+</header>
+<!-- fin menu -->
   <section class="experience">
         <div class="experience-content">
             <h1 class="title">Mes expériences professionnelles</h1>
@@ -46,13 +45,24 @@
                 <a href="#main" class="bn3637 bn37">Explorer</a>
         </div>
     </section>
+
+    <div class="langages-filter">
+      <button id="all-langages" class="langage-btn active" data-langage="all">Années</button>
+      <button id="sio-langage" class="langage-btn" data-langage="sio">SIO</button>
+      <button id="fcil-langage" class="langage-btn" data-langage="fcil">FCIL</button>
+      <button id="assp-langage" class="langage-btn" data-langage="assp">ASSP</button>
+      <!-- <button id="csharp-langage" class="langage-btn" data-langage=".net">.Net</button> -->
+      <!-- <button id="csharp-langage" class="langage-btn" data-langage="reseau">Réseau</button> -->
+  </div>
 </div>
 
 <!-- début card -->
+<div class="main">
+<!-- <section class="containe"> -->
 <div class="card-container" id="main">
 <figure class="snip1418"><img src="../background/btssio_elcia.jpg" alt="btssio"/>
     <figcaption>
-      <div class="card-content">
+      <div class="card-content" data-langages="sio">
       <h3>BTS SIO</h3>
       <p>ELCIA Éditeur de solutions et logiciels Menuiserie, Store et Fermeture</p>
       <p>Brignais 69530</p>
@@ -63,9 +73,11 @@
       </div>
     </figcaption>
     </figure>
+
+
     <figure class="snip1418 hover"><img src="../background/FCIL.jpg" alt="sample96"/>
       <figcaption>
-        <div class="card-content">
+        <div class="card-content" data-langages="fcil">
         <h3>FCIL</h3>
         <p>Lycée Aragon Picasso - Maintenance Informatiques</p>
         <p>Givors 69700</p>
@@ -76,9 +88,11 @@
         </div>
       </figcaption>
       </figure>
+
+
       <figure class="snip1418 hover"><img src="../background/creche.jpg" alt="sample96"/>
         <figcaption>
-          <div class="card-content">
+          <div class="card-content" data-langages="assp">
             <h3>BAC ASSP - Terminal</h3>
             <p>Crèche Pôle enfance Marie Antoinette Goubelly<p>
             <p>Givors 69700</p>
@@ -89,11 +103,11 @@
           </div>
         </figcaption>
         </figure>
-        </div>
-        <div class="card-container" id="main">
+        <!-- </div>
+        <div class="card-container" id="main"> -->
         <figure class="snip1418"><img src="../background/ehpad.jpg" alt="sample92"/>
           <figcaption>
-            <div class="card-content">
+            <div class="card-content" data-langages="assp">
               <h3>BAC ASSP - Terminal</h3>
               <p>EHPAD Sainte Anne - ASH</p>
               <p>Brignais 69530</p>
@@ -106,7 +120,7 @@
           </figure>
           <figure class="snip1418 hover"><img src="../background/sante.jpg" alt="sample96"/>
             <figcaption>
-              <div class="card-content">
+              <div class="card-content" data-langages="assp">
                 <h3>BAC ASSP - Seconde</h3>
                 <p>Centre Hospitalier Montgelas - ASH</p>
                 <p>Givors 69700</p>
@@ -118,7 +132,7 @@
               </figure>
               <figure class="snip1418 hover"><img src="../background/ecolematernelle.jpg" alt="sample96"/>
                 <figcaption>
-                  <div class="card-content">
+                  <div class="card-content" data-langages="assp">
                     <h3>BAC ASSP - Seconde</h3>
                       <p>Ecole Maternelle Paul Gauguin</p>
                       <p>Grigny 69520</p>
@@ -129,6 +143,8 @@
                   </div>
                   </figure>
                 </div>
+              </div>
+              <!-- </section> -->
 <!-- fin card -->
     <div class="bar-sp"></div>
     <footer>
@@ -137,5 +153,44 @@
     <script src="../js/up_arrow.js  "></script>
     <script src="../js/responsive.js"></script>
     <script src="../js/navbar.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const langageButtons = document.querySelectorAll(".langage-btn");
+  const cards = document.querySelectorAll(".card-container .snip1418");
+
+  langageButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+      const selectedLangage = button.getAttribute("data-langage");
+
+      // Désactive le bouton actif et active le bouton sélectionné
+      langageButtons.forEach(function(btn) {
+        btn.classList.remove("active");
+      });
+      button.classList.add("active");
+
+      // Filtrer les cartes en fonction du langage sélectionné
+      cards.forEach(function(card) {
+        const langages = card.querySelector('.card-content').getAttribute("data-langages");
+        if (selectedLangage === "all" || langages === selectedLangage) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+
+      // Vérifier si une seule carte est affichée
+      const visibleCards = document.querySelectorAll(".card-container .snip1418[style='display: block;']");
+      if (visibleCards.length === 1) {
+        // Si une seule carte est affichée, centrer la carte
+        visibleCards[0].parentElement.style.justifyContent = "center";
+      } else {
+        // Sinon, réinitialiser la justification
+        document.querySelector(".card-container").style.justifyContent = "initial";
+      }
+    });
+  });
+});
+
+</script>
 </body>
 </html>

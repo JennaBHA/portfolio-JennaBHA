@@ -76,6 +76,13 @@
       background-repeat: no-repeat; 
       background-size: cover; 
   }
+  .main {
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    padding: 10px 0;
+}
 
   .situation::before {
       content: '';
@@ -128,12 +135,6 @@
     font-size: 20px;
   }
 
-  /* ------------------------------------------------------ */
-  
-
-  .bouton_pdf {
-    display: flex;
-  }
     /* -------------------------------- */
   /* bouton explorer */
   .bouton_pop {
@@ -169,21 +170,8 @@
   /* --------------------------------------------- */
 
   .pdf {
-    margin: 10px;
-    padding: 10px;
-    background-color: #3498db;
-    color: #fff;
     text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
   }
-
-  .pdf:hover {
-    background-color: #2980b9;
-  }
-
 
   .popup {
     display: none;
@@ -282,4 +270,33 @@
   
 .bn37:hover {
   transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+}
+/* ----------------------------------------------------------------------------------------------- */
+.langages-filter {
+  margin-bottom: 20px;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.langage-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 0 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.langage-btn:hover {
+  background-color: #c7c2c2;
+}
+
+.langage-btn.active {
+  background-color: #c2c0c9;
+  color: #272525;
 }

@@ -4,7 +4,7 @@
   align-items: center;
   padding: 0 10%;
   border-bottom: 0.1px solid rgb(255, 255, 255); 
-  background-image: url('../../background/lyon.jpg');
+  background-image: url('https://images.unsplash.com/photo-1663786892580-5ae2282ae34f?q=80&w=2013&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: 100%;
   position: relative;
   font-size: 18px;
@@ -196,9 +196,25 @@ body {
 }
 
 .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    align-items: center;
+    justify-content: center;
+  }
+  .main {
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
+  padding: 10px 0;
+}
+
+  .containe {
     display: flex;
     justify-content: center;
-}
+  }
 
 .card-container .snip1418 figcaption {
   flex-direction: column;
@@ -279,3 +295,32 @@ html {
 }
 
 /* ----------------------------- */
+
+.langages-filter {
+  margin-bottom: 20px;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.langage-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 0 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.langage-btn:hover {
+  background-color: #c7c2c2;
+}
+
+.langage-btn.active {
+  background-color: #c2c0c9;
+  color: #272525;
+}
