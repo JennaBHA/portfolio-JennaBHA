@@ -135,9 +135,21 @@
   /* ---------------------------------------------------------------------------- */
   /*card*/
   .card-container {
-      display: flex;
-      flex-wrap: wrap; 
-      justify-content: center; 
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+        align-items: center;
+        justify-content: center;
+  }
+
+  .main {
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    padding: 10px 0;
   }
 
   .card {
@@ -333,4 +345,10 @@
 .langage-btn.active {
   background-color: #c2c0c9;
   color: #272525;
+}
+
+.github {
+  font-size: 4dvb; /* Taille de l'icône */
+  color: black; /* Couleur de l'icône */
+  /* margin-left: 3em; */
 }

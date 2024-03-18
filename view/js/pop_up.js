@@ -49,3 +49,10 @@ function closePopup3() {
   document.body.classList.remove("popup-active");
   document.querySelector(".situation-content").style.zIndex = "1";
 }
+
+function closePopup4() {
+  document.getElementById("popup4").style.display = "none";
+  document.body.classList.remove("popup-active");
+  document.querySelector(".situation-content").style.zIndex = "1";
+}
+
