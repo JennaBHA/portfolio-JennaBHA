@@ -1,6 +1,6 @@
     function initTyped() {
         var typed = new Typed(".auto-type", {
-            strings: ["Developer", "Developer", "Programmer", "Designer"],
+            strings: ["Developer", "développeuse", "programmeuse", "designer"],
             typeSpeed: 150,
             backSpeed: 50,
             loop: false,

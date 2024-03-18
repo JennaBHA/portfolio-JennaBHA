@@ -19,11 +19,6 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.6); 
 }
- 
-/*.b {
-    color: #ff002f;
-    font-size: 20px;
-} */
 
 .experience{
     height: 100vh;
@@ -116,7 +111,8 @@ body {
   transition: all 0.3s ease-out;
 }
 .snip1418 img {
-  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
   vertical-align: top;
   position: relative;
   height: 220px;
