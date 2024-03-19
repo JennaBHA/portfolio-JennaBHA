@@ -50,9 +50,28 @@ function closePopup3() {
   document.querySelector(".situation-content").style.zIndex = "1";
 }
 
+// Fonctions pour le quatrième popup
+function showPopup4() {
+  document.getElementById("popup4").style.display = "flex";
+  document.body.classList.add("popup-active");
+  document.querySelector(".situation-content").style.zIndex = "0";
+}
+
 function closePopup4() {
   document.getElementById("popup4").style.display = "none";
   document.body.classList.remove("popup-active");
   document.querySelector(".situation-content").style.zIndex = "1";
 }
 
+// Fonctions pour la pop-up de la pharmacie
+function showPopup6() {
+  document.getElementById("popup6").style.display = "flex";
+  document.body.classList.add("popup-active");
+  document.querySelector(".situation-content").style.zIndex = "0";
+}
+
+function closePopup6() {
+  document.getElementById("popup6").style.display = "none";
+  document.body.classList.remove("popup-active");
+  document.querySelector(".situation-content").style.zIndex = "1";
+}

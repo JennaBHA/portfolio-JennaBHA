@@ -194,3 +194,23 @@ body {
       justify-content: center;
       padding: 10px;
   } 
+  .reponse {
+    border: 2px solid white; /* Bordure blanche de 2 pixels */
+    padding: 20px; /* Ajouter un peu de rembourrage pour l'espace intérieur */
+    margin: 20px; /* Ajouter une marge de 20px de chaque côté */
+  }
+  
+  .reponse h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .reponse p {
+    text-align: center;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  
+  

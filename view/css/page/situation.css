@@ -347,8 +347,21 @@
   color: #272525;
 }
 
-.github {
-  font-size: 4dvb; /* Taille de l'icône */
-  color: black; /* Couleur de l'icône */
-  /* margin-left: 3em; */
+/* .github {
+  font-size: 4dvb; 
+  color: black; 
+} */
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.lien {
+  color: white;
+  text-decoration: underline;
+}
+
+.pharmacie {
+  color: white;
+  text-decoration: underline;
 }
