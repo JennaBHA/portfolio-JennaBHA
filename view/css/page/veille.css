@@ -213,4 +213,11 @@ body {
     margin-right: 3em;
   }
   
-  
+  /* Styles pour positionner le texte "site: nomdusite" en bas de chaque carte */
+.snip1418 figcaption .site {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 14px;
+  /* color: #999; Couleur de texte personnalisable */
+}
