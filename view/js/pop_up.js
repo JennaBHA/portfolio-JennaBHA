@@ -75,3 +75,16 @@ function closePopup6() {
   document.body.classList.remove("popup-active");
   document.querySelector(".situation-content").style.zIndex = "1";
 }
+
+// Fonctions pour le premier popup
+function showPopup7() {
+  document.getElementById("popup7").style.display = "flex";
+  document.body.classList.add("popup-active");
+  document.querySelector(".situation-content").style.zIndex = "0";
+}
+
+function closePopup7() {
+  document.getElementById("popup7").style.display = "none";
+  document.body.classList.remove("popup-active");
+  document.querySelector(".situation-content").style.zIndex = "1";
+}
